@@ -20,7 +20,6 @@ import Home from './views/Home.vue';
       <div style="display: flex; gap: 10px;">
         <Sidebar v-if="$route.meta.hideNavbar" />
         <div class="wrapper">
-          
           <router-view />
         </div>
       </div>

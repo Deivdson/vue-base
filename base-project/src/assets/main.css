@@ -10,14 +10,26 @@
 a,
 .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+  color: #8400d1;
+  /* text-shadow: 0 0 2px #ff005e, 0 0 4px #ff005e, 0 0 8px #ff005e, 0 0 16px #ff005e, 0 0 32px #ff005e;
+  animation: glow 1.5s infinite alternate;
+  transition: 0.4s; */
   padding: 3px;
+}
+
+@keyframes glow {
+  0% {
+      text-shadow: 0 0 2px #ff005e, 0 0 4px #ff005e, 0 0 8px #ff005e, 0 0 16px #ff005e, 0 0 32px #ff005e;
+  }
+  100% {
+      text-shadow: 0 0 2px #00d4ff, 0 0 4px #00d4ff, 0 0 8px #00d4ff, 0 0 16px #00d4ff, 0 0 32px #00d4ff;
+  }
 }
 
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
+    border-radius: 5px;
   }
 }
 
